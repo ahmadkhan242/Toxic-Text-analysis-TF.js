@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron" style="margin-top: 30px;">
+            <h2>Toxicity analysis on given sentence.</h2>
+            <div class="input-group mb-3" style="margin-top: 30px;" id="main">
+                <input type="text" class="form-control" placeholder="Enter your sentence" id="text" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append" style="margin-right: 10px;">
+                  <span class="input-group-text" id="basic-addon2" onclick="get_text()">Enter</span>
+                </div>
+            </div>
+            
+            <div id="pred">
+
+            </div>
+        </div>
+    </div>
+    <script src="./assets/model.js"></script>
+</body>
+</html>
